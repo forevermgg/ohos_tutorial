@@ -1,0 +1,1 @@
+./mac-sdk-full/ohos_sdk.sh

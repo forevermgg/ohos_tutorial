@@ -1,0 +1,21 @@
+diff --git a/Configurations/10-main.conf b/Configurations/10-main.conf
+index e8084ab808..81fdf43016 100644
+--- a/Configurations/10-main.conf
++++ b/Configurations/10-main.conf
+@@ -698,6 +698,7 @@ my %targets = (
+         shared_cflag     => "-fPIC",
+         shared_ldflag    => sub { $disabled{pinshared} ? () : "-Wl,-znodelete" },
+         enable           => [ "afalgeng" ],
++        shared_extension => ".so",
+     },
+     "linux-latomic" => {
+         inherit_from     => [ "linux-generic32" ],
+@@ -764,7 +765,7 @@ my %targets = (
+         #
+         # ./Configure linux-armv4 -march=armv6 -D__ARM_MAX_ARCH__=8
+         #
+-        inherit_from     => [ "linux-latomic" ],
++        inherit_from     => [ "linux-generic32" ],
+         asm_arch         => 'armv4',
+         perlasm_scheme   => "linux32",
+     },
