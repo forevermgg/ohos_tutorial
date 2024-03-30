@@ -9,6 +9,12 @@ echo "> system" "$(uname -s)"
 workspace=$(pwd)
 echo "当前目录: ${workspace}"
 
+cd workspace
+cd mac-sdk-full
+
+wget https://repo.huaweicloud.com/openharmony/os/4.0-Release/L2-SDK-MAC-M1-PUBLIC.tar.gz
+tar -xvzf L2-SDK-MAC-M1-PUBLIC.tar.gz
+
 mac_ohos_sdk_dir="${workspace}/mac-sdk-full/sdk/packages"
 echo "mac_ohos_sdk_dir目录: ${mac_ohos_sdk_dir}"
 
