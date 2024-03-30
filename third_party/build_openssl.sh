@@ -8,7 +8,7 @@ SCRIPT_DIR=$(dirname "$(realpath "$0")")
 echo "Script directory: $SCRIPT_DIR"
 
 # 设置OHOS_NATIVE_HOME和路径
-OHOS_NATIVE_HOME=/Users/centforever/CLionProjects/ohos_tutorial/mac-sdk-full/sdk/packages/ohos-sdk/darwin/native
+OHOS_NATIVE_HOME=/Users/forevermeng/CLionProjects/ohos_tutorial/mac-sdk-full/sdk/packages/ohos-sdk/darwin/native
 export OHOS_NATIVE_HOME
 export PATH="$OHOS_NATIVE_HOME/llvm/bin:$PATH"
 
