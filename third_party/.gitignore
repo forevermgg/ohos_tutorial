@@ -1,2 +1,3 @@
-openssl/
-skia/
+openssl/*
+skia/*
+cJSON/*
