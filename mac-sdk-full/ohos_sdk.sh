@@ -18,6 +18,7 @@ tar -xvzf L2-SDK-MAC-M1-PUBLIC.tar.gz
 mac_ohos_sdk_dir="${workspace}/mac-sdk-full/sdk/packages"
 echo "mac_ohos_sdk_dir目录: ${mac_ohos_sdk_dir}"
 
+# for i in *.zip;do unzip ${i};done
 unzip_ohos_sdk() {
   local platform=$1
   local open_harmony_dir=$2
